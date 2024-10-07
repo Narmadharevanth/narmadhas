@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Explore the World with TravelBloom</h1>
+            <p>Discover new places, immerse in different cultures, and book your next adventure.</p>
+            <input type="text" id="searchBar" placeholder="Search for destinations..." onkeyup="searchRecommendations()">
+            <button id="searchButton" onclick="searchRecommendations()">Search</button>
+        </div>
+        <div id="recommendations" class="recommendations">
+            <h2>Top Recommendations</h2>
+            <div id="recommendation-results"></div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At TravelBloom, we are passionate about helping you discover the best destinations around the world. Our mission is to inspire travelers and make it easy to explore the beauty and culture of different regions.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="mailto:contact@travelbloom.com" method="post" enctype="text/plain">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
